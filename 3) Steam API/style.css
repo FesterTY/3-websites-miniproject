@@ -1,0 +1,100 @@
+/**********************
+**     CSS RESET
+***********************/
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/**********************
+**     CUSTOM CSS
+***********************/
+
+/*******  SEARCH BAR **********/
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+form#search-steam {
+    margin: 20px 0;
+    border: 1px solid #ff8800;
+}
+
+form#search-steam input[type=text] {
+    padding: 10px;
+    width: 200px;
+    border: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #444444;
+}
+
+
+form#search-steam input[type=text]:focus {
+    outline: none;
+}
+
+form#search-steam button {
+    background: #ff8800;
+    border: 0;
+    padding: 10px;
+    color: #ffffff;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+form#search-steam button:hover {
+    background: #ff5500;
+}
+
+/*******   WARNING **********/
+
+.warning {
+    color: red;
+    text-align: center;
+    display: none;
+}
+
+/*******    PROFILE SECTION **********/
+
+.profile-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.profile-section {
+    padding: 5px;
+    height: 150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.profile-section img {
+    height: 184px;
+    justify-self: self-end;
+    position: relative;
+    right: 50px;
+}
+
+ul#profile-description {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    display: inline-block;
+}
+
+li {
+    font-size: 20px;
+}
+
+li.username {
+    font-size: 31px;
+}

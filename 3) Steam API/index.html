@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Steam API</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' />
+    <link href='style.css' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+    <div class='wrapper'>
+        <form id='search-steam'>
+            <input type='text' placeholder="Steam ID"/>
+            <button>Search</button>
+        </form>
+    </div>
+
+    <p class='warning'>Steam ID not found. Please make sure they are all numbers.</p>
+
+    <div class='profile-wrapper'>
+        <section class='profile-section'>
+            <img src='assets/default.png' class='profile-pic' alt='Profile picture' />
+            
+            <ul id='profile-description'>
+                <li class='username'>Username: <a>N/A</a></li>
+                <li class='real-name'>Real Name: <a>N/A</a></li>
+                <li class='profile-url'>Profile URL: <a>N/A</a></li>
+                <li class='currently-playing'>Currently Playing: <a>N/A</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js' type='text/javascript'></script>
+    <script src='app.js' type='text/javascript'></script>
+</body>
+
+</html>
