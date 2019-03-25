@@ -8,7 +8,7 @@ searchSteamForm.on('submit', function (e) {
 
     $.ajax({
         type: 'get',
-        url: `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=FFCEC9A768E99673D1732D709EE1764B&steamids=${steamID}`,
+        url: `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=XXXXXXXXXXXXXXXXXXXXX&steamids=${steamID}`,
 
 
         success: function (data) {
